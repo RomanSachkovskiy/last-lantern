@@ -72,7 +72,7 @@ export class BaseScene extends Phaser.Scene {
 
     const result = gameState.lastResult;
     if (result) {
-      const reason = result.reason === 'safe' ? 'Вернулась к лестнице' :
+      const reason = result.reason === 'safe' ? 'Возвращение к лестнице' :
         result.reason === 'emergency' ? 'Экстренная эвакуация' : 'Фонарь погас';
       this.add.text(320, 726, `${reason} · +${result.earned} монет из ${result.totalValue}`, {
         fontFamily: 'Arial, sans-serif', fontSize: '18px', color: '#eed3a2',
@@ -82,8 +82,5 @@ export class BaseScene extends Phaser.Scene {
         fontFamily: 'Arial, sans-serif', fontSize: '18px', color: COLORS.muted,
       }).setOrigin(0.5);
     }
-    this.add.text(320, 770, 'Автосохранение в браузере · Работает на GitHub Pages', {
-      fontFamily: 'Arial, sans-serif', fontSize: '16px', color: COLORS.muted,
-    }).setOrigin(0.5);
   }
 }
