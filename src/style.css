@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+html, body, #app { margin: 0; width: 100%; height: 100%; }
+body { background: #080d17; overflow: hidden; font-family: system-ui, sans-serif; }
+#app { display: flex; justify-content: center; align-items: center; }
+canvas { display: block; touch-action: none; }

@@ -1,0 +1,20 @@
+{
+  "name": "last-lantern",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check:core": "tsc --project tsconfig.core.json --noEmit",
+    "test": "node tests/core.test.cjs"
+  },
+  "dependencies": {
+    "phaser": "4.2.1"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "vite": "7.1.0"
+  }
+}
